@@ -1,0 +1,167 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+main>section{
+  width: 50%;
+  float:left;
+  padding: 1%; 
+  color: white;
+  
+}
+
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  height: 50px;
+  background-color: black;
+  color: white;
+
+}
+nav *{
+  float: left;
+  width: 10%;
+  color: white;
+  display: block;
+  text-decoration: none;
+  
+}
+
+
+
+ul{
+  width: 75%;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.threeBlocks{
+  float: left;
+  width: 33.33%;
+}
+
+.leftBlock{
+  position: relative;
+  text-align: left;
+  
+}
+
+.quadRight{
+  float: right;
+  width: 50%;
+  position: relative;
+  text-align: left;
+  padding: 2%;
+  
+}
+
+/* .rightBlock{
+  padding-bottom: 5%;
+} */
+
+h4{
+  position: absolute;
+  bottom: 50px;
+  left: 16px;
+}
+
+h1{
+  position: absolute;
+  bottom: 70px;
+  left: 25px;
+  font-weight: 100;
+}
+
+.leftBlock p{
+  position: absolute;
+  bottom: 40px;
+  left: 25px;
+  font-weight: 100;
+}
+.leftBlock span{
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+}
+
+.quadRight span{
+  position: absolute;
+  bottom: 20px;
+  left: 16px;
+}
+
+
+main>section>img{
+  width: 100%;
+}
+
+.quadRight img{
+  width: 100%;
+}
+
+.topTextLeft{
+  width: 50%;
+  float: left;
+  padding-left: 50px;
+}
+
+.topTextRight{
+  width: 50%;
+  float: right;
+  text-align: right;
+  padding-right: 50px;
+}
+
+.topBlock{
+  padding-top: 20px;
+}
+
+.newsBlock{
+  width: 100%;
+}
+
+.threeBlocks img{
+  width: 100%;
+  padding: 2%;
+}
+
+#signIn{
+  padding-right: 100px;
+}
+
+ul li{
+  border-right: 1px solid white;
+  padding-left: 30px;
+  height: 50px;
+}
+
+#bbcLogo{
+  border-right: 1px solid white;
+  height: 50px;
+}

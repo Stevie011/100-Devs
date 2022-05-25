@@ -1,0 +1,27 @@
+const vowels = ["a","e","i","o","u"]
+let testString = "abcdefhij"
+
+function disemvowel(str) {
+    let newString = "";
+    for (let i = 0; i < testString.length; i++) {
+        if (vowels.includes(str[i]) == 'False'){
+            newString = newString + str[i];
+        }
+        // newString = newString + str[i];
+      }
+      return newString;
+  }
+  
+console.log(disemvowel(testString))
+
+
+
+function disemvowel(str) {
+    let newString = "";
+    for (let i = 0; i < testString.length; i++) {
+        if (vowels.includes(str[i]) == false){
+            newString = newString + str[i];
+        }
+      }
+      return newString;
+  }

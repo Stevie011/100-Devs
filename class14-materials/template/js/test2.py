@@ -1,0 +1,1 @@
+stringName = "abcdefghij"

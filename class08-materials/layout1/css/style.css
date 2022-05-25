@@ -1,0 +1,134 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+/* .clear {
+	clear: both;
+} */
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body{
+  
+  font-family: "Exo 2";
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+/* nav,main,aside{
+  float: left;
+  
+} */
+
+nav{
+  width: 10%;
+  float: left;
+  
+  
+  
+}
+
+main{
+  width: 50%;
+  float: left;
+  
+  
+  
+}
+
+aside{
+  width: 40%;
+  float: right;
+}
+
+.bottomBit{
+  
+  clear: both;
+  width: 100%;
+  padding-left: 10%;
+  padding-top: 10px;
+}
+
+.bottomList{
+  width: 30%;
+  float: left;
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+ul{
+  list-style-type: none;
+  
+}
+
+nav>ul>li{
+  padding: 10px;
+}
+
+
+a{
+  text-decoration: none;
+  color: rgb(121, 120, 120);
+}
+
+main>p{
+  color: rgb(160, 160, 160);
+}
+
+.textRight >h2{
+  font-weight:1500;
+  font-size: 1.45rem;
+  letter-spacing: 0.001px;
+  font-family: "Exo 2";
+}
+
+.textRight > span{
+  font-size: smaller;
+  font-family: "Exo 2";
+}
+
+.textRight{
+  border-bottom: 1px solid rgba(211, 211, 211, 0.6);
+  padding-bottom: 10px;
+}
+
+h1{
+  font-weight: 900;
+  font-family: "Exo 2";
+}
+
+h4{
+  border-bottom: 1px solid rgba(211, 211, 211, 0.6);
+}
+
+#login{
+  color: black;
+  font-size: smaller;
+  padding: 20px;
+
+}
+
+.search{
+  
+  float: left;
+}
+
+.greyOne{
+  color: rgb(92, 92, 91);
+}
