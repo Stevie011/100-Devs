@@ -1,4 +1,4 @@
-//Code 01
+//Code 01   //this just runs 1 after the other normally
 // function houseOne(){
 //     console.log('Paper delivered to house 1')
 // }
@@ -12,21 +12,23 @@
 // houseTwo()
 // houseThree()
 
-//Code 02
+//Code 02   //runs houseOne, tells houseTwo to wait, runs houseThree
+//two prints after three
 // function houseOne(){
 //     console.log('Paper delivered to house 1')
 // }
 // function houseTwo(){
-//     setTimeout(() => console.log('Paper delivered to house 2'), 3000)
+//     setTimeout(() => console.log('Paper delivered to house 2'), 0)
 // }
 // function houseThree(){
 //     console.log('Paper delivered to house 3')
 // }
-// houseOne()
 // houseTwo()
+// houseOne()
+
 // houseThree()
 
-//Code 03
+//Code 03 //calls houseThree as part of houseTwo, so it prints houseOne, then waits the three seconds, then prints two then three
 // function houseOne(){
 //     console.log('Paper delivered to house 1')
 // }
@@ -42,7 +44,8 @@
 // houseOne()
 // houseTwo(houseThree)
 
-//Code 04
+//Code 04   //nested callback hell
+//still actually waits for each to complete before the next
 // function houseOne(){
 //     setTimeout(() => {
 //         console.log('Paper delivered to house 1')
@@ -56,7 +59,8 @@
 // }
 // houseOne()
 
-//Code 05
+//Code 05   //promises save us from callback nesting
+//promise is an object that may have a value in the future
 // const promise = new Promise((resolve, reject) => {
 //     const error = false
 //     if(!error){
@@ -101,27 +105,30 @@
 //     .catch(err => console.log(err))
 
 //Code 07
+//now it kinda starts to read good
 // function houseOne(){
 //     return new Promise((resolve, reject) => {
 //         setTimeout(() => {
 //             resolve('Paper delivered to house 1')
-//         }, 1000)
+//         }, 10)
 //     })
 // }
 // function houseTwo(){
 //     return new Promise((resolve, reject) => {
 //         setTimeout(() => {
 //             resolve('Paper delivered to house 2')
-//         }, 5000)
+//         }, 50)
 //     })
 // }
 // function houseThree(){
 //     return new Promise((resolve, reject) => {
 //         setTimeout(() => {
 //             resolve('Paper delivered to house 3')
-//         }, 2000)
+//         }, 20)
 //     })
 // }
+
+
 
 // async function getPaid(){
 //     const houseOneWait = await houseOne()
@@ -134,11 +141,26 @@
 
 // getPaid()
 
-//Code 08
-// async function getACuteDogPhoto(){
-//     const res = await fetch('https://dog.ceo/api/breeds/image/random')
-//     const data = await res.json()
-//     console.log(data)
+//********** */
+
+//can you loop with inputting a ${ } statement?
+// let houseNo = 3
+
+// function houseStatus(i){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve('Paper delivered to house 1')
+//         }, 10)
+//     })
 // }
-// getACuteDogPhoto()
+
+//Code 08
+
+//HW is to add try...catch block here
+async function getACuteDogPhoto(){
+    const res = await fetch('https://dog.ceo/api/breeds/image/random')
+    const data = await res.json()
+    console.log(data)
+}
+getACuteDogPhoto()
 

@@ -7,3 +7,6 @@ http.createServer((req, res) => {
     res.end()
   })
 }).listen(8000)
+
+
+//this alone actually makes a mini server
